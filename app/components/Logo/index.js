@@ -27,7 +27,7 @@ function Logo() {
     <Div>
       <Img alt="logo" src={walletLogo} />
       <a href={website}>
-        ETH Hot Wallet
+        币合钱包
       </a>
     </Div>
   );

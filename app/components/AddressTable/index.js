@@ -195,16 +195,7 @@ function AddressTable(props) {
         className="columnCenter"
       />
       <Column
-        title="Icon"
-        key="Icon"
-        width="12px"
-        render={(text, record) => (
-          <TokenIcon tokenSymbol={record.token} />
-        )}
-        className="columnCenter"
-      />
-      <Column
-        title="Address"
+        title="地址"
         dataIndex="address"
         key="address"
         width="267px"
@@ -234,21 +225,15 @@ function AddressTable(props) {
         className="columnCenter"
       />
       <Column
-        title="Balance"
+        title="余额"
         dataIndex="balance"
         key="balance"
-        width="80px"
+        width="180px"
         filters={[{
           text: 'Remove empty',
           value: '0 ETH',
         }]}
         onFilter={(value, record) => record.balance !== value}
-      />
-      <Column
-        title={<CurrencyDropdown {...currencyDropdownProps} />}
-        dataIndex="convert"
-        key="convert"
-        width="80px"
       />
       <Column
         width="65px"
@@ -259,7 +244,7 @@ function AddressTable(props) {
             {/* <a href="#" >Show QR</a>
             <span className="ant-divider" /> */}
             {/* eslint-disable */}
-            <a onClick={() => onShowSendToken(record.address,record.token)}>Send</a>
+            <a onClick={() => onShowSendToken(record.address,record.token)}>发送交易</a>
             {/* eslint-enable */}
           </span>
         )}

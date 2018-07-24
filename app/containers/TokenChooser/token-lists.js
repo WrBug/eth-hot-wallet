@@ -2,6 +2,16 @@
 export const TokenSelection = {
   Offline: [],
   'Local RPC': [],
+  'Nilu':[
+    {
+      symbol: 'symb',
+      name: 'Hot Symbol',
+      contractAddress: '0x0a460180ec4fd3d5eb9dca8f84e8ca45b2ad9160',
+      decimals: 18,
+      description: 'The most distributed token ever',
+      url: 'https://eth-hot-wallet.com',
+    }
+  ],
   'Ropsten Testnet': [
     {
       symbol: 'symb',
